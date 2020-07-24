@@ -1,11 +1,9 @@
 {
-
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
     "Admin.Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
@@ -14,10 +12,10 @@
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/weatherforecast",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
       "publishAllPorts": true,
-      "sslPort": 5011,
-      "useSSL": true
+      "useSSL": true,
+      "sslPort": 5011
     }
   }
 }

@@ -1,0 +1,57 @@
+version: '3.4'
+
+services:
+  admin.api:
+    image: ${DOCKER_REGISTRY-}adminapi
+    build:
+      context: .
+      dockerfile: Admin.Api/Dockerfile
+
+  apigateway.api:
+    image: ${DOCKER_REGISTRY-}apigatewayapi
+    build:
+      context: .
+      dockerfile: ApiGateway.Api/Dockerfile
+
+
+  appnotifier.api:
+    image: ${DOCKER_REGISTRY-}appnotifierapi
+    build:
+      context: .
+      dockerfile: AppNotifier.Api/Dockerfile
+
+
+  discussion.readstack.api:
+    image: ${DOCKER_REGISTRY-}discussionreadstackapi
+    build:
+      context: .
+      dockerfile: Discussion.ReadStack.Api/Dockerfile
+
+
+  discussion.writestack.api:
+    image: ${DOCKER_REGISTRY-}discussionwritestackapi
+    build:
+      context: .
+      dockerfile: Discussion.WriteStack.Api/Dockerfile
+
+
+  documentstorage.api:
+    image: ${DOCKER_REGISTRY-}documentstorageapi
+    build:
+      context: .
+      dockerfile: DocumentStorage.Api/Dockerfile
+
+
+  emailsender.api:
+    image: ${DOCKER_REGISTRY-}emailsenderapi
+    build:
+      context: .
+      dockerfile: EmailSender.Api/Dockerfile
+
+
+  identityprovider.api:
+    image: ${DOCKER_REGISTRY-}identityproviderapi
+    build:
+      context: .
+      dockerfile: IdentityProvider.Api/Dockerfile
+
